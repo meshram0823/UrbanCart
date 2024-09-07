@@ -1,0 +1,14 @@
+.go-to-shop {
+    color: #ff69b4; /* Pink color for the link */
+    text-decoration: none;
+    background: no-repeat 0 100%;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 2px;
+    transition: background-size 0.3s ease;
+  }
+  
+  .go-to-shop:hover,
+  .go-to-shop:focus {
+    background-size: 100% 2px;
+  }
+  

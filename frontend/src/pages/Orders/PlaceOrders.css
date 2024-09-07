@@ -1,0 +1,9 @@
+/* Add padding to the table to ensure it doesn't hide under the navigation */
+.table-container {
+  padding-left: 5rem; /* Adjust this value according to the width of your navigation */
+}
+
+/* Make sure the sidebar has a higher z-index */
+.navbar {
+  z-index: 1000; /* Higher z-index to ensure it stays above other content */
+}

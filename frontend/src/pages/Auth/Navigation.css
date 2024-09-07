@@ -1,0 +1,85 @@
+#navigation-container {
+  width: 4%;
+  transition: width 0.3s ease-in-out;
+  overflow: hidden; /* Hide overflowing content during transition */
+}
+
+#navigation-container:hover {
+  width: 15%;
+}
+
+/* Initially hide nav-item-name */
+.nav-item-name {
+  display: none;
+  transition: opacity 0.2s ease-in-out; /* Add opacity transition */
+}
+
+#navigation-container:hover .nav-item-name {
+  display: block;
+  opacity: 1;
+}
+
+.search-input {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out; /* Add opacity transition */
+}
+
+#navigation-container:hover .search-input {
+  display: block;
+  opacity: 1;
+}
+
+#navigation-container:hover .search-icon {
+  display: none;
+  transition: opacity 0.2s ease-in-out; /* Add opacity transition */
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+  background-color: #000; /* Background color for the dropdown menu */
+  color: #fff; /* Default text color */
+}
+
+.dropdown-menu a,
+.dropdown-menu button {
+  color: #fff; /* Default text color for links and buttons */
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu button:hover {
+  color: #000; /* Text color when hovered */
+  background-color: #fff; /* Background color for links and buttons when hovered */
+}
+
+/* const toogleSiderbar = () => {
+    setShowSidebar(!showSidebar);
+  };
+
+  const closeSidebar = () => {
+    setShowSidebar(false);
+  }; */
+
+/* Dropdown menu styles
+.dropdown-menu {
+  background-color: #000;
+  color: #fff;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  margin-top: 0.5rem;
+  border-radius: 0.25rem;
+  z-index: 999;
+  transform: scaleY(0); /* Start with scaleY set to 0 for a smooth scale effect */
+  /* transform-origin: top; /* Origin at the top for dropdown animation */
+  /* transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out; */ 
+/* } */
+
+/* Expanded dropdown menu */
+/* .dropdown-open .dropdown-menu {
+  max-height: 300px; /* Adjust as necessary */
+  /* opacity: 1;
+  transform: scaleY(1); /* Scale up smoothly to full size */
+/* } */ 
