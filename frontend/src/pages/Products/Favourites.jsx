@@ -3,7 +3,12 @@ import { selectFavouriteProduct } from "../../redux/features/favourites/favourit
 import Product from "./Product";
 
 const Favourites = () => {
+  // Fetch the favourites from the Redux store
   const favourites = useSelector(selectFavouriteProduct);
+
+  if (!favourites || favourites.length === 0) {
+    return <p className="ml-[10rem] text-lg font-bold ml-[3rem]">No favourite products found.</p>;
+  }
 
   return (
     <div className="ml-[10rem]">
@@ -12,7 +17,7 @@ const Favourites = () => {
       <div className="flex flex-wrap">
         {favourites.map((product) => (
           // Only render the product if it has a valid _id
-          product._id && <Product key={product._id} product={product} />
+          product._id ? <Product key={product._id} product={product} /> : null
         ))}
       </div>
     </div>
